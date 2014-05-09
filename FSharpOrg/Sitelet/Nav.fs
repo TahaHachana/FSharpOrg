@@ -53,9 +53,59 @@ let navDiv activeLi ctx =
     Div [Class "collapse navbar-collapse"] -< [
         UL [Class "nav navbar-nav"] -< [
             li activeLi "/" "Home"
-            li activeLi "/about" "About"
+            LI [Class "dropdown"] -< [
+                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
+                    Text "Learn "
+                    B [Class "caret"]
+                ]
+                UL [Class "dropdown-menu"] -< [
+                    LI [A [HRef "#"] -< [Text "About F#"]]
+                    LI [A [HRef "#"] -< [Text "Resources"]]
+                    LI [A [HRef "#"] -< [Text "Videos"]]
+                    LI [A [HRef "#"] -< [Text "Documentation"]]
+                    LI [A [HRef "#"] -< [Text "Specification"]]
+                    LI [A [HRef "#"] -< [Text "Research"]]
+                    LI [A [HRef "#"] -< [Text "Commercial Support"]]
+                ]
+            ]
+            LI [Class "dropdown"] -< [
+                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
+                    Text "Community "
+                    B [Class "caret"]
+                ]
+                UL [Class "dropdown-menu"] -< [
+                    LI [A [HRef "#"] -< [Text "Mailing List"]]
+                    LI [A [HRef "#"] -< [Text "Projects"]]
+                    LI [A [HRef "#"] -< [Text "Blogs"]]
+                    LI [A [HRef "#"] -< [Text "GitHub"]]
+                    LI [A [HRef "#"] -< [Text "CodePlex"]]
+                    LI [A [HRef "#"] -< [Text "Code Snippets"]]
+
+                ]
+            ]
+            li activeLi "#" "Teach"
+            li activeLi "#" "Foundation"
+            LI [Class "dropdown"] -< [
+                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
+                    Text "Applications "
+                    B [Class "caret"]
+                ]
+                UL [Class "dropdown-menu"] -< [
+                    LI [A [HRef "#"] -< [Text "Data Science"]]
+                    LI [A [HRef "#"] -< [Text "Web programming"]]
+                    LI [A [HRef "#"] -< [Text "Apps and games"]]
+                    LI [A [HRef "#"] -< [Text "Machine learning"]]
+                    LI [A [HRef "#"] -< [Text "Cloud programming"]]
+                    LI [A [HRef "#"] -< [Text "Financial computing"]]
+                    LI [A [HRef "#"] -< [Text "Math and statistics"]]
+                    LI [A [HRef "#"] -< [Text "Data Access"]]
+
+                ]
+            ]
+
+            li activeLi "/" "Testimonials"
         ]
-        loginInfo ctx
+//        loginInfo ctx
     ]
 
 let navElt activeLi ctx : Content.HtmlElement =

@@ -39,16 +39,17 @@ footer div {
     margin: 50px auto;
 }
 
+#download-menu {text-align: left;}
 .home-rule {
     width: 200px;
 }
 
 .carousel-control {
-  width:10%;
+  width:7%;
 }
 
 .sponsor {
-    margin-bottom: 5px;
+    margin: 20px auto;
 }
 
 #sponsors-carousel {
@@ -57,12 +58,15 @@ footer div {
 
 .list-group-item {
     border: none;
-    padding: 5px 15px;
+    padding: 5px 0;
 }
 
 #news-list {
     width: 75%;
 }
+
+
+.footer-links {list-style-type: none; padding-left: 0;}
 
 /* Login */
 #login-form {

@@ -36,18 +36,26 @@
         <section class="row">
             <div class="featured-text-center lead">
                 <!--                <h2>F# Programming Language</h2>-->
-                <p>F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. F# runs on Linux, Mac OS X, Android, iOS, Windows as well as HTML5 and GPUs.</p>
-                <p>
-                    <a class="btn btn-default btn-lg btn-home" href="#">Download F#</a>
-                </p>
-                <hr class="home-rule" />
-                <p>F# is used in a wide range of application areas and is supported by both industry-leading companies providing professional tools, and by an active open community. F# is designed to enable interoperation with langauges and data sources. F# type providers enable integration with data sources including WSDL, REST, Excel, CSV, SQL, Freebase, WorldBank and with environments such as R and Matlab and many more.</p>
-                <!--                <p>
-                    <a class="btn btn-default btn-lg" href="#">Learn F# online with TryFSharp</a>
-                </p>-->
+                <p>F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle" data-toggle="dropdown">
+                        Download F# <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu" id="download-menu">
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">Mac</a></li>
+                        <li><a href="#">Linux</a></li>
+                        <li><a href="#">FreeBSD</a></li>
+
+                    </ul>
+                </div>
+
 
                 <hr class="home-rule" />
-                <p>F# is free to use and has an OSI-approved open source license.</p>
+                <p>F# is used in a wide range of application areas and is supported by both industry-leading companies providing professional tools, and by an active community. FSharp is designed to enable interoperation with langauges and data sources. F# type providers enable integration with data sources including WSDL, REST, Excel, CSV, SQL, Freebase, WorldBank and with environments such as R and Matlab.</p>
+
+                <hr class="home-rule" />
+                <p>F# is free to use and is subject to an OSI-approved open source license.</p>
                 <p>
                     <a class="btn btn-default btn-lg" href="#">GitHub Project</a>
                 </p>
@@ -61,111 +69,109 @@
                     <section id="getting-started">
                         <div class="row featured">
                             <div class="col-md-6">
-                                <h2><span class="glyphicon glyphicon-pencil"></span>Learn</h2>
-                                <p>Learn F# online with <a href="http://tryfsharp.org/Learn">Try F#</a>, read <a href="/about/learning.html">F# books and tutorials</a> and watch <a href="/videos/1">F# talks and tutorials</a>.</p>
+                                <h2><span class="glyphicon glyphicon-pencil"></span> Learn</h2>
+                                <p>Learn F# online with <a href="http://tryfsharp.org/Learn">Try F#</a>, read <a href="/about/learning.html">books and tutorials</a> and watch <a href="/videos/1">F# talks</a>.</p>
 
                             </div>
                             <div class="col-md-6">
-                                <h2><span class="glyphicon glyphicon-user"></span>Community</h2>
-                                <p>Ask questions on <a href="http://stackoverflow.com/tags/f%23/info">StackOverflow</a>, join <a href="/groups/">F# meetups</a>, contribute to <a href="/community/projects/">open source projects</a>, gain skills with <a href="/training">F# trainings</a> and engage <a href="/consulting">F# consultants</a>.</p>
+                                <h2><span class="glyphicon glyphicon-user"></span> Community</h2>
+                                <p>Ask questions on <a href="http://stackoverflow.com/tags/f%23/info">StackOverflow</a>, join <a href="/groups/">F# user groups</a>, contribute to <a href="/community/projects/">open source projects</a>, gain skills with <a href="/training">F# trainings</a> and hire <a href="/consulting">professional F# consultants</a>.</p>
                             </div>
 
 
                         </div>
                     </section>
                     <hr />
-                    <div data-replace="body">BODY</div>
-                    <hr />
-                    <section class="featured">
-                            <h2>Corporate Sponsors</h2>
-                        <div id="sponsors-carousel" class="carousel slide"> <!--data-ride="carousel">-->
-                            <!-- Indicators -->
-<!--                            <ol class="carousel-indicators">
-                                <li data-target="#sponsors-carousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#sponsors-carousel" data-slide-to="1"></li>
-                                <li data-target="#sponsors-carousel" data-slide-to="2"></li>
-                            </ol>-->
 
+                                <div data-replace="body">BODY</div>
+
+                    <hr />
+                    
+                    
+                    <section class="featured">
+                        <h2>Corporate Sponsors</h2>
+                        <div id="sponsors-carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <!--                            <ol class="carousel-indicators">
+                                                            <li data-target="#sponsors-carousel" data-slide-to="0" class="active"></li>
+                                                            <li data-target="#sponsors-carousel" data-slide-to="1"></li>
+                                                            <li data-target="#sponsors-carousel" data-slide-to="2"></li>
+                                                        </ol>-->
                             <!-- Wrapper for slides -->
                             <div class="carousel-inner">
                                 <div class="item active">
                                     <div class="row">
-                                    <div class="col-md-4">
-                                        <a href="#"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/quantalea.png" alt="..." />
-                                    </a><div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="https://www.quantalea.net/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/quantalea.png" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <a href="#"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/ffconsultancy.png" alt="..." />
-                                    </a><div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.ffconsultancy.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/ffconsultancy.png" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <a href="#"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/mbrace.png" alt="..." />
-                                    </a><div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.m-brace.net/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/mbrace.png" alt="..." />
+                                            </a>
                                         </div>
 
                                     </div>
 
                                 </div>
-                                
+
                                 <div class="item">
                                     <div class="row">
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/fpish.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://fpish.net/" target="_blank"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/fpish.png" alt="..." /></a>
+
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/statfactory.jpg" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.statfactory.co.uk/" target="_blank"> <img class="center-block img-responsive sponsor" src="/Images/Sponsors/statfactory.jpg" alt="..." /></a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/skillsmatter.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://skillsmatter.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/skillsmatter.png" alt="..." />
+                                            </a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="row">
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/intelli.gif" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.intellifactory.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/intelli.gif" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/extremeoptimization.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.extremeoptimization.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/extremeoptimization.png" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/tsunami.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.tsunami.io/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/tsunami.png" alt="..." />
+                                            </a>
                                         </div>
 
                                     </div>
                                 </div>
                                 <div class="item">
                                     <div class="row">
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/mathdotnet.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://www.mathdotnet.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/mathdotnet.png" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/microsoft.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://fsharp.net/" target="_blank"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/microsoft.png" alt="..." /></a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/xamarin.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://xamarin.com/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/xamarin.png" alt="..." />
+                                            </a>
                                         </div>
 
                                     </div>
@@ -173,20 +179,16 @@
 
                                 <div class="item">
                                     <div class="row">
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/servicestack.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4">
+                                            <a href="http://servicestack.net/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/servicestack.png" alt="..." />
+                                            </a>
                                         </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/kaggle.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
-                                        </div>
-                                    <div class="col-md-4">
-                                        <img class="center-block img-responsive sponsor" src="/Images/Sponsors/fpbridge.png" alt="..." />
-                                    <div class="carousel-caption">
-                                    </div>
+                                        <div class="col-md-4"><a href="http://www.kaggle.com/" target="_blank"><img class="center-block img-responsive sponsor" src="/Images/Sponsors/kaggle.png" alt="..." /></a></div>
+                                        <div class="col-md-4">
+                                            <a href="http://fpbridge.co.uk/" target="_blank">
+                                                <img class="center-block img-responsive sponsor" src="/Images/Sponsors/fpbridge.png" alt="..." />
+                                            </a>
                                         </div>
 
                                     </div>
@@ -201,8 +203,45 @@
                             <a class="right carousel-control" href="#sponsors-carousel" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                             </a>
-                        </div></section>
+                        </div>
+                    </section>
+                    <hr />
 
+                    <section class="featured">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <h4>Groups</h4>
+                                <ul class="footer-links">
+                                    <li><a href="#" class="text-muted">Technical Groups</a></li>
+                                    <li><a href="#" class="text-muted">User Groups</a></li>
+                                    <li><a href="#" class="text-muted">Coding Dojos</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Guides</h4>
+                                <ul class="footer-links">
+                                    <li><a href="#" class="text-muted">F# For Fun And Profit</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <h4>Build</h4><ul class="footer-links">
+                                                  <li><a href="#" class="text-muted">HTML5 Apps</a></li>
+                                <li><a href="#" class="text-muted">Android Apps</a></li>
+                                <li><a href="#" class="text-muted">iOS Apps</a></li>
+                                <li><a href="#" class="text-muted">GPU Programming</a></li></ul></div>
+                            <div class="col-md-3">
+                                <h4>Forums</h4><ul class="footer-links">
+                                    <li><a href="#" class="text-muted">StackOverflow</a></li>
+                                                   <li><a href="#" class="text-muted">FPish</a></li>
+                                    <li><a href="#" class="text-muted">StackExchange</a></li>
+                                    <li><a href="#" class="text-muted">MSDN</a></li>
+                                <li><a href="#" class="text-muted">IRC</a> (<a href="#" class="text-muted">Archive</a>)</li>
+                                </ul>
+                            </div>
+
+
+                            </div>
+                    </section>
 
                     <!--                    <section>
                         <div class="page-header">
@@ -295,9 +334,7 @@
     <!-- JS -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <!-- AddThis Smart Layers BEGIN -->
-    <!-- Go to http://www.addthis.com/get/smart-layers to customize
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
     <![CDATA[
     <script type="text/javascript">
         addthis.layers({
@@ -314,7 +351,6 @@
             }
         });
     </script>
-    ]]>
-    AddThis Smart Layers END -->
+    ]]>-->
 </body>
 </html>

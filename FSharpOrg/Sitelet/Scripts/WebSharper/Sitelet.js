@@ -107,8 +107,8 @@
     }),
     main:Runtime.Field(function()
     {
-     var ul;
-     ul=Default.UL(List.ofArray([Default.Attr().Class("list-group"),Default.Attr().NewAttr("id","news-list")]));
+     var _ul_43_1;
+     _ul_43_1=Default.UL(List.ofArray([Default.Attr().Class("list-group"),Default.Attr().NewAttr("id","news-list")]));
      jQuery.getJSON("http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=http%3A%2F%2Ffpish.net%2Frss%2Fblogs%2Ftag%2F1%2Ff~23",Runtime.Tupled(function(tupledArg)
      {
       var data,_arg1,entries,x;
@@ -125,10 +125,10 @@
       {
        var arg10;
        arg10=x1.link;
-       return ul.AppendI(Operators.add(Default.LI(List.ofArray([Default.Attr().Class("list-group-item")])),List.ofArray([Operators.add(Default.H4(List.ofArray([Default.Attr().Class("list-group-item-heading")])),List.ofArray([Default.A(List.ofArray([Default.Attr().NewAttr("href",arg10),Default.Attr().NewAttr("target","_blank"),Default.Text(x1.title)]))])),Default.P(List.ofArray([Default.Text(x1.contentSnippet)]))])));
+       return _ul_43_1.AppendI(Operators.add(Default.LI(List.ofArray([Default.Attr().Class("list-group-item")])),List.ofArray([Operators.add(Default.H4(List.ofArray([Default.Attr().Class("list-group-item-heading")])),List.ofArray([Default.A(List.ofArray([Default.Attr().NewAttr("href",arg10),Default.Attr().NewAttr("target","_blank"),Default.Text(x1.title)]))])),Default.P(List.ofArray([Default.Text(x1.contentSnippet)]))])));
       },x);
      }));
-     return ul;
+     return _ul_43_1;
     })
    }
   }

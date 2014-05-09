@@ -10,11 +10,9 @@ module Home =
 
     let body ctx : Content.HtmlElement =
         HTML5.Section [Class "featured"] -< [
-            Div [
-                H2 [Text "News"]
-            ] :> INode<_>
-            new News.Control() :> _
-        ]
+                H2 [Text "News"] :> INode<_>
+                new News.Control() :> _
+            ]
 
 module About =
 
