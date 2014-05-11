@@ -53,7 +53,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Images\favicon.ico" />
+    <Content Include="Images\Favicon.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Sponsors\extremeoptimization.png" />
     <Content Include="Images\Sponsors\ffconsultancy.png" />

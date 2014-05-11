@@ -37,8 +37,10 @@ let navToggle =
 let navHeader =
     Div [Class "navbar-header"] -< [
         navToggle
-        A [Class "navbar-brand hidden-xs"; HRef "/"] -< [Text "F# Software Foundation"]
-        A [Class "navbar-brand visible-xs"; HRef "/"] -< [Text "FSSF"]
+        A [Class "navbar-brand"; HRef "/"] -< [
+            Img [Src "/Images/logo.png"; Alt "F# Logo"; Id "logo"]
+        ]
+//        A [Class "navbar-brand visible-xs"; HRef "/"] -< [Text "FSSF"]
     ]
 
 let li activeLiOption href txt =
@@ -53,24 +55,24 @@ let navDiv activeLi ctx =
     Div [Class "collapse navbar-collapse"] -< [
         UL [Class "nav navbar-nav"] -< [
             li activeLi "/" "Home"
+//            LI [Class "dropdown"] -< [
+//                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
+//                    Text "Learn "
+//                    B [Class "caret"]
+//                ]
+//                UL [Class "dropdown-menu"] -< [
+//                    LI [A [HRef "#"] -< [Text "About F#"]]
+//                    LI [A [HRef "#"] -< [Text "Resources"]]
+//                    LI [A [HRef "#"] -< [Text "Videos"]]
+//                    LI [A [HRef "#"] -< [Text "Documentation"]]
+//                    LI [A [HRef "#"] -< [Text "Specification"]]
+//                    LI [A [HRef "#"] -< [Text "Research"]]
+//                    LI [A [HRef "#"] -< [Text "Commercial Support"]]
+//                ]
+//            ]
             LI [Class "dropdown"] -< [
                 A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
-                    Text "Learn "
-                    B [Class "caret"]
-                ]
-                UL [Class "dropdown-menu"] -< [
-                    LI [A [HRef "#"] -< [Text "About F#"]]
-                    LI [A [HRef "#"] -< [Text "Resources"]]
-                    LI [A [HRef "#"] -< [Text "Videos"]]
-                    LI [A [HRef "#"] -< [Text "Documentation"]]
-                    LI [A [HRef "#"] -< [Text "Specification"]]
-                    LI [A [HRef "#"] -< [Text "Research"]]
-                    LI [A [HRef "#"] -< [Text "Commercial Support"]]
-                ]
-            ]
-            LI [Class "dropdown"] -< [
-                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
-                    Text "Community "
+                    Text "Contribute "
                     B [Class "caret"]
                 ]
                 UL [Class "dropdown-menu"] -< [
@@ -84,7 +86,6 @@ let navDiv activeLi ctx =
                 ]
             ]
             li activeLi "#" "Teach"
-            li activeLi "#" "Foundation"
             LI [Class "dropdown"] -< [
                 A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
                     Text "Applications "
@@ -104,6 +105,7 @@ let navDiv activeLi ctx =
             ]
 
             li activeLi "/" "Testimonials"
+            li activeLi "#" "Foundation"
         ]
 //        loginInfo ctx
     ]

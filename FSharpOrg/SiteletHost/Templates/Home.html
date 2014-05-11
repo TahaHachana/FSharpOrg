@@ -9,9 +9,10 @@
 
     <title>${title}</title>
 
-    <link rel="shortcut icon" href="/Images/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/Images/favicon.ico" type="image/x-icon" />
+    <!--<link rel="shortcut icon" href="/Images/Favicon.png" type="image/x-icon" />
+    <link rel="icon" href="/Images/Favicon.png" type="image/x-icon" />-->
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />    
     <link href="/StyleSheets/StyleSheet1.css" rel="stylesheet" media="screen" />
 
     <!--[if lt IE 9]>
@@ -28,6 +29,7 @@
 
         <div class="container text-center">
             <h1>F# Software Foundation</h1>
+            <!--<img class="img-thumbnail img-responsive center-block" src="/Images/logo.png" alt="F# Logo" id="logo" />-->
         </div>
     </div>
 
@@ -38,15 +40,44 @@
                 <!--                <h2>F# Programming Language</h2>-->
                 <p>F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle" data-toggle="dropdown">
-                        Download F# <span class="caret"></span>
+                    <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle" data-toggle="dropdown" id="download-btn">
+                        Download <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu" id="download-menu">
+                    <ul class="dropdown-menu btn-menu" role="menu">
                         <li><a href="#">Windows</a></li>
                         <li><a href="#">Mac</a></li>
                         <li><a href="#">Linux</a></li>
                         <li><a href="#">FreeBSD</a></li>
 
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default btn-lg dropdown-toggle btn-home" data-toggle="dropdown">
+                        Learn <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu btn-menu" role="menu">
+                            <li>
+                                <a href="#">About F#</a>
+                            </li>
+                            <li>
+                                <a href="#">Resources</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Specification</a>
+                            </li>
+                            <li>
+                                <a href="#">Research</a>
+                            </li>
+                            <li>
+                                <a href="#">Commercial Support</a>
+                            </li>
+                        
                     </ul>
                 </div>
 
@@ -56,12 +87,23 @@
 
                 <hr class="home-rule" />
                 <p>F# is free to use and is subject to an OSI-approved open source license.</p>
-                <p>
-                    <a class="btn btn-default btn-lg" href="#">GitHub Project</a>
-                </p>
 
             </div>
+            <!--<![CDATA[
+            <div class="addthis_toolbox addthis_default_style featured">
+                <div>
+                    <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                    <a class="addthis_button_tweet"></a>
+                    <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+                    <a class="addthis_counter addthis_pill_style"></a>
+                </div>
+            </div>
+    <script type="text/javascript">var addthis_config = { "data_track_addressbar": true };</script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+    ]]>-->
+
         </section>
+
         <hr />
         <div>
             <div class="row">
@@ -209,7 +251,7 @@
 
                     <section class="featured">
                         <div class="row">
-                            <div class="col-md-3">
+                            <div class="col-md-2 col-md-offset-1">
                                 <h4>Groups</h4>
                                 <ul class="footer-links">
                                     <li><a href="#" class="text-muted">Technical Groups</a></li>
@@ -217,31 +259,44 @@
                                     <li><a href="#" class="text-muted">Coding Dojos</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <h4>Guides</h4>
                                 <ul class="footer-links">
                                     <li><a href="#" class="text-muted">F# For Fun And Profit</a></li>
+                                    <li><a href="#" class="text-muted">WikiBook</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-md-2">
                                 <h4>Build</h4><ul class="footer-links">
-                                                  <li><a href="#" class="text-muted">HTML5 Apps</a></li>
-                                <li><a href="#" class="text-muted">Android Apps</a></li>
-                                <li><a href="#" class="text-muted">iOS Apps</a></li>
-                                <li><a href="#" class="text-muted">GPU Programming</a></li></ul></div>
-                            <div class="col-md-3">
+                                    <li><a href="#" class="text-muted">HTML5 Apps</a></li>
+                                    <li><a href="#" class="text-muted">Android Apps</a></li>
+                                    <li><a href="#" class="text-muted">iOS Apps</a></li>
+                                    <li><a href="#" class="text-muted">GPU Programming</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-2">
                                 <h4>Forums</h4><ul class="footer-links">
                                     <li><a href="#" class="text-muted">StackOverflow</a></li>
-                                                   <li><a href="#" class="text-muted">FPish</a></li>
+                                    <li><a href="#" class="text-muted">FPish</a></li>
                                     <li><a href="#" class="text-muted">StackExchange</a></li>
                                     <li><a href="#" class="text-muted">MSDN</a></li>
-                                <li><a href="#" class="text-muted">IRC</a> (<a href="#" class="text-muted">Archive</a>)</li>
+                                    <li><a href="#" class="text-muted">IRC</a> (<a href="#" class="text-muted">Archive</a>)</li>
                                 </ul>
                             </div>
+                            <div class="col-md-2">
+                                <h4>Follow</h4>
 
+                                    <!-- AddThis Follow BEGIN -->
+                                    <![CDATA[<div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
+                                        <a class="addthis_button_facebook_follow text-muted" addthis:userid="fsharp.org"></a>
+                                        <a class="addthis_button_twitter_follow text-muted" addthis:userid="fsharp.org"></a>
+                                    </div>
+                                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+                                    <!-- AddThis Follow END -->
+                                ]]></div>
 
                             </div>
-                    </section>
+</section>
 
                     <!--                    <section>
                         <div class="page-header">
@@ -250,7 +305,7 @@
                         </div>
                     </section>-->
                 </div>
-                <!--                <div class="col-md-3">
+                <!--                <div class="col-md-2">
                     <h4 class="first">About</h4>
                     <ul class="list-group">
                         <li class="list-group-item"><a href="/about/index.html">About F#</a></li>
@@ -334,7 +389,7 @@
     <!-- JS -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
     <![CDATA[
     <script type="text/javascript">
         addthis.layers({
@@ -343,14 +398,14 @@
                 'position': 'left',
                 'numPreferredServices': 5
             },
-            'follow': {
-                'services': [
-                  { 'service': 'facebook', 'id': 'fsharp.org' },
-                  { 'service': 'twitter', 'id': 'fsharporg' }
-                ]
-            }
+            //'follow': {
+            //    'services': [
+            //      { 'service': 'facebook', 'id': 'fsharp.org' },
+            //      { 'service': 'twitter', 'id': 'fsharporg' }
+            //    ]
+            //}
         });
     </script>
-    ]]>-->
+    ]]>
 </body>
 </html>
