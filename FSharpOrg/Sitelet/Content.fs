@@ -10,7 +10,12 @@ module Home =
 
     let body ctx : Content.HtmlElement =
         HTML5.Section [Class "featured"] -< [
-                H2 [Text "News"] :> INode<_>
+                H2 [
+                    Text "News"
+                    A [HRef "http://fpish.net/rss/blogs/tag/1/f~23"; Id "news-rss"] -< [
+                        Img [Src "/Images/FeedIcon.png"; Alt "RSS Feed"]
+                    ]
+                ] :> INode<_>
                 new News.Control() :> _
             ]
 
