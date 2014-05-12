@@ -4,7 +4,7 @@
 }
 
 .navbar-default {
-background-color: white;
+    background-color: white;
 }
 
 .navbar-brand,
@@ -14,7 +14,10 @@ background-color: white;
     padding-top: 0;
 }
 
-body {background: #f9f9f9; font-family: 'open sans', 'helvetica neue', helvetica, arial, sans-serif;}
+body {
+    background: #f9f9f9;
+    font-family: 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+}
 
 #main {
     padding-top: 100px;
@@ -30,11 +33,16 @@ footer div {
 }
 
 #download-btn {
-        color: white;
+    color: white;
     background-color: #1B68A2;
 }
+
 #push {
     height: 50px;
+}
+
+.lead {
+    font-size: 19px;
 }
 
 /* Home */
@@ -44,7 +52,9 @@ footer div {
     font-size: 60px;
 }
 
-#logo {width: 50px;}
+#logo {
+    width: 50px;
+}
 
 .featured-text-center {
     text-align: center;
@@ -58,14 +68,26 @@ footer div {
     margin: 50px auto;
 }
 
-.btn-menu {text-align: left;}
+.btn-menu {
+    margin-top: 10px
+}
+
+.btn-menu>ul {
+    text-align: left;
+}
 
 .home-rule {
     width: 200px;
 }
 
+#news-rss:hover {
+    text-decoration: none;
+}
+
+#news-rss>img {vertical-align: baseline}
+
 .carousel-control {
-  width:7%;
+    width: 7%;
 }
 
 .sponsor {
@@ -87,7 +109,10 @@ footer div {
 }
 
 
-.footer-links {list-style-type: none; padding-left: 0;}
+.footer-links {
+    list-style-type: none;
+    padding-left: 0;
+}
 
 /* Login */
 #login-form {
@@ -102,20 +127,20 @@ footer div {
 */
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 110px;
+    /* Margin bottom by footer height */
+    margin-bottom: 140px;
 }
 
 #footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 110px;
-  /*background-color: #f5f5f5;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 140px;
+    /*background-color: #f5f5f5;*/
 }

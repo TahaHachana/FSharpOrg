@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Favicon.png" />
+    <Content Include="Images\FeedIcon.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Sponsors\extremeoptimization.png" />
     <Content Include="Images\Sponsors\ffconsultancy.png" />
