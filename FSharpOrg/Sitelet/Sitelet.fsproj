@@ -13,6 +13,7 @@
     <RestorePackages>true</RestorePackages>
     <TargetFSharpCoreVersion>4.3.0.0</TargetFSharpCoreVersion>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
+    <NuGetPackageImportStamp>38ef4908</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugSymbols>true</DebugSymbols>
@@ -98,12 +99,12 @@
   </ProjectExtensions>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Import Project="..\packages\WebSharper.2.5.92.21\build\WebSharper.targets" Condition="Exists('..\packages\WebSharper.2.5.92.21\build\WebSharper.targets')" />
-  <Import Project="..\packages\WebSharper.2.5.105.38\build\WebSharper.targets" Condition="Exists('..\packages\WebSharper.2.5.105.38\build\WebSharper.targets')" />
+  <Import Project="..\packages\WebSharper.2.5.113.48\build\WebSharper.targets" Condition="Exists('..\packages\WebSharper.2.5.113.48\build\WebSharper.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
-      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Activez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est le suivant : {0}.</ErrorText>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\packages\WebSharper.2.5.105.38\build\WebSharper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WebSharper.2.5.105.38\build\WebSharper.targets'))" />
+    <Error Condition="!Exists('..\packages\WebSharper.2.5.113.48\build\WebSharper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\WebSharper.2.5.113.48\build\WebSharper.targets'))" />
   </Target>
   <ItemGroup>
     <Compile Include="Skin.fs" />
@@ -122,9 +123,76 @@
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="IntelliFactory.Core">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.Formlet">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Formlet.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.Html">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.JavaScript">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.JavaScript.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.Reactive">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Collections">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Compiler">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Control">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Control.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Core">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Dom">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Dom.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Ecma">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Ecma.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Formlet">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Formlet.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Html">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Html.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Html5">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Html5.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.InterfaceGenerator">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.InterfaceGenerator.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.JQuery">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.JQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.MSBuild">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.MSBuild.dll</HintPath>
+    </Reference>
     <Reference Include="IntelliFactory.WebSharper.Piglets">
-      <HintPath>..\packages\WebSharper.Piglets.0.1.74.133\lib\net40\IntelliFactory.WebSharper.Piglets.dll</HintPath>
+      <HintPath>..\packages\WebSharper.Piglets.0.1.81.140\lib\net40\IntelliFactory.WebSharper.Piglets.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Piglets" />
+    <Reference Include="IntelliFactory.WebSharper.Sitelets">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Sitelets.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Testing">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Testing.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.WebSharper.Web">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.WebSharper.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="IntelliFactory.Xml">
+      <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System" />

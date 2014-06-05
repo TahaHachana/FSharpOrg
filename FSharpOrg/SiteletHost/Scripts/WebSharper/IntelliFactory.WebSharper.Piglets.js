@@ -1082,11 +1082,11 @@
           x=_arg1.$0;
           return Concurrency.Delay(function()
           {
-           return Concurrency.Bind(m(x),function(_arg2)
+           return Concurrency.Bind(m(x),function(arg101)
            {
             return Concurrency.Return(Runtime.New(Result,{
              $:0,
-             $0:_arg2
+             $0:arg101
             }));
            });
           });
@@ -1115,17 +1115,17 @@
        {
         return Concurrency.Start(Concurrency.Delay(function()
         {
-         return Concurrency.Bind(m(v),function(_arg1)
+         return Concurrency.Bind(m(v),function(arg101)
          {
-          return Concurrency.Return(out.Trigger(_arg1));
+          return Concurrency.Return(out.Trigger(arg101));
          });
         }));
        });
        Concurrency.Start(Concurrency.Delay(function()
        {
-        return Concurrency.Bind(m(p.stream.get_Latest()),function(_arg2)
+        return Concurrency.Bind(m(p.stream.get_Latest()),function(arg101)
         {
-         return Concurrency.Return(out.Trigger(_arg2));
+         return Concurrency.Return(out.Trigger(arg101));
         });
        }));
        return Runtime.New(Piglet,{

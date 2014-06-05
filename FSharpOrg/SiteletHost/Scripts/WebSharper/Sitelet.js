@@ -20,9 +20,9 @@
       {
        return Concurrency.Start(Concurrency.Delay(function()
        {
-        return Concurrency.Bind(Remoting.Async("Sitelet:0",[loginInfo]),function(_arg1)
+        return Concurrency.Bind(Remoting.Async("Sitelet:0",[loginInfo]),function(arg101)
         {
-         if(_arg1.$==1)
+         if(arg101.$==1)
           {
            window.location.assign(redirectUrl);
            return Concurrency.Return(null);
