@@ -54,6 +54,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\Facebook.png" />
     <Content Include="Images\Favicon.png" />
     <Content Include="Images\FeedIcon.png" />
     <Content Include="Images\logo.png" />
@@ -72,11 +73,11 @@
     <Content Include="Images\Sponsors\statfactory.jpg" />
     <Content Include="Images\Sponsors\tsunami.png" />
     <Content Include="Images\Sponsors\xamarin.png" />
+    <Content Include="Images\Twitter.png" />
     <Content Include="robots.txt" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.d.ts" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.js" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.min.js" />
-    <Content Include="Scripts\WebSharper\IntelliFactory.Html.d.ts" />
     <Content Include="Scripts\WebSharper\IntelliFactory.JavaScript\Runtime.js" />
     <Content Include="Scripts\WebSharper\IntelliFactory.JavaScript\Runtime.min.js" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Reactive.d.ts" />
@@ -136,7 +137,6 @@
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\FSharpOrgFileSystem.pubxml" />
     <None Include="Properties\PublishProfiles\WebSharperMVCFileSystem.pubxml" />
-    <Content Include="Scripts\WebSharper\build.tmp" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

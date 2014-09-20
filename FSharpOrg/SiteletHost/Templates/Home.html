@@ -26,71 +26,89 @@
 
     <!-- Jumbotron -->
     <section class="jumbotron" id="main">
+        <div class="container text-right">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="../Images/logo.png" class="img-responsive img-rounded" alt="F# Logo" id="logo" />
+                </div>
+                <div class="col-md-7">
+                    <h1>F# Software Foundation</h1>
+                    <p>F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                            Download <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">FreeBSD</a></li>
 
-        <div class="container text-center">
-            <h1>F# Software Foundation</h1>
+                        </ul>
+                    </div>
+                    <!--<div class="btn-group">
+                        <button type="button" class="btn btn-default btn-lg dropdown-toggle btn-home btn-menu" data-toggle="dropdown">
+                            Learn <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#">Try F#</a>
+                            </li>
+                            <li>
+                                <a href="#">About F#</a>
+                            </li>
+                            <li>
+                                <a href="#">Resources</a>
+                            </li>
+                            <li>
+                                <a href="#">Videos</a>
+                            </li>
+                            <li>
+                                <a href="#">Documentation</a>
+                            </li>
+                            <li>
+                                <a href="#">Specification</a>
+                            </li>
+                            <li>
+                                <a href="#">Research</a>
+                            </li>
+                            <li>
+                                <a href="#">Consultants</a>
+                            </li>
+                            <li>
+                                <a href="#">Training</a>
+                            </li>
+                        </ul>
+                    </div>-->
+
+                </div>
+
+            </div>
+            <div class="text-center" style="padding-top: 20px;">
+                <p>F# is used in a wide range of application areas and is supported by both industry-leading companies providing professional tools, and by an active community. FSharp is designed to enable interoperation with langauges and data sources. F# type providers enable integration with data sources including WSDL, REST, Excel, CSV, SQL, Freebase, WorldBank and with environments such as R and Matlab.</p>
+                <hr class="home-rule" />
+                <p>F# is free to use and is subject to an OSI-approved open source license.</p>
+                <div>
+                    <a href="#" class="btn btn-default social-btn"><img src="../Images/Twitter.png" /></a>
+                    <a href="#" class="btn btn-default social-btn"><img src="../Images/Facebook.png" /></a>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <section class="home-section light-gray">
+    <!--<section class="home-section" id="home-section-1">
         <div class="container featured lead text-center">
-            <p>F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
-                    Download <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Windows</a></li>
-                    <li><a href="#">Mac</a></li>
-                    <li><a href="#">Linux</a></li>
-                    <li><a href="#">FreeBSD</a></li>
-
-                </ul>
-            </div>
-            <div class="btn-group">
-                <button type="button" class="btn btn-default btn-lg dropdown-toggle btn-home btn-menu" data-toggle="dropdown">
-                    Learn <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li>
-                        <a href="#">Try F#</a>
-                    </li>
-                    <li>
-                        <a href="#">About F#</a>
-                    </li>
-                    <li>
-                        <a href="#">Resources</a>
-                    </li>
-                    <li>
-                        <a href="#">Videos</a>
-                    </li>
-                    <li>
-                        <a href="#">Documentation</a>
-                    </li>
-                    <li>
-                        <a href="#">Specification</a>
-                    </li>
-                    <li>
-                        <a href="#">Research</a>
-                    </li>
-                    <li>
-                        <a href="#">Consultants</a>
-                    </li>
-                    <li>
-                        <a href="#">Training</a>
-                    </li>
-                </ul>
-            </div>
-            <hr class="home-rule" />
             <p>F# is used in a wide range of application areas and is supported by both industry-leading companies providing professional tools, and by an active community. FSharp is designed to enable interoperation with langauges and data sources. F# type providers enable integration with data sources including WSDL, REST, Excel, CSV, SQL, Freebase, WorldBank and with environments such as R and Matlab.</p>
             <hr class="home-rule" />
             <p>F# is free to use and is subject to an OSI-approved open source license.</p>
         </div>
-    </section>
+    </section>-->
 
     <section class="home-section">
         <div class="container featured">
-            <div style="color: red;">Copied from F# for fun and profit, to be replaced with custom content.</div>
+            <div style="color: red; font-weight: bold;">Copied from F# for fun and profit, to be replaced with custom content.</div>
             <div class="row">
                 <div class="col-md-7">
                     <h2 class="hidden-xs">Concise</h2>
@@ -110,12 +128,10 @@
  
 <span class="fs-comment">// simple types in one line</span>
 type Person = {First:string; Last:string}
-
 <span class="fs-comment">// complex types in a few lines</span>
 <span class="fs-keyword">type</span> Employee = 
   | Worker of Person
   | Manager of Employee list
-
 <span class="fs-comment">// type inference</span>
 <br />
 <span class="fs-keyword">let</span> jdoe = {First="John";Last="Doe"}
@@ -133,19 +149,18 @@ printfn <span class="fs-string">"print string %s"</span> 123 <span class="fs-com
 <br />
 <span class="fs-comment">// all values immutable by default</span>
 person1.First &lt;- "new name" <span class="fs-comment">//assignment error</span>
-                        <br />
+                    <br />
 <br />
 
 <span class="fs-comment">// never have to check for nulls</span>
 <br /><span class="fs-keyword">let</span> makeNewString str = 
-   <span class="fs-comment">//str can be concatted safely</span><br />
-   <span class="fs-keyword">   let</span> newString = str + <span class="fs-string">" new!"</span>
+                    <span class="fs-comment">//str can be concatted safely</span><br />
+                    <span class="fs-keyword">   let</span> newString = str + <span class="fs-string">" new!"</span>
    newString
-
 <span class="fs-comment">// embed business logic into types</span>
 emptyShoppingCart.remove <span class="fs-comment">// compile error!</span>
 <br />
-                        <br />
+                    <br />
 <span class="fs-comment">// units of measure</span>
 let distance = 10&lt;m&gt; + 10&lt;ft&gt; <span class="fs-comment">// error!</span>
 </pre>
@@ -169,14 +184,12 @@ let distance = 10&lt;m&gt; + 10&lt;ft&gt; <span class="fs-comment">// error!</sp
 <span class="fs-comment">// easy async logic with "async" keyword</span>
 <br />
 <span class="fs-keyword">let!</span> result = async {something}
-
 <span class="fs-comment">// easy parallelism</span>
 Async.Parallel [ for i in 0..40 -> 
-    <span class="fs-keyword">async</span> { return fib(i) } ]
-
+                    <span class="fs-keyword">async</span> { return fib(i) } ]
 <span class="fs-comment">// message queues</span>
 MailboxProcessor.Start(fun inbox-> <span class="fs-keyword">async</span> {
-    <span class="fs-keyword">let!</span> msg = inbox.Receive()
+                    <span class="fs-keyword">let!</span> msg = inbox.Receive()
     printfn <span class="fs-string">"message is: %s"</span> msg
     })
 </pre>
@@ -205,6 +218,13 @@ MailboxProcessor.Start(fun inbox-> <span class="fs-keyword">async</span> {
                         <li>Start your new open source project in F# or contribute to <a href="#">existing ones</a></li>
                         <li>Gain skills with <a href="#">commercial training</a> and <a href="#">support</a></li>
                     </ul>
+                    <h3><span class="glyphicon glyphicon-bullhorn"></span> Spread the word</h3>
+                    <ul>
+                        <li><a href="#">Tweet about F#</a></li>
+                        <li>Give a talk about F#</li>
+                        <li>Start a local user group</li>
+                    </ul>
+
                 </div>
 
             </div>

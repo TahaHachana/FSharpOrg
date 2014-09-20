@@ -37,9 +37,9 @@ let navToggle =
 let navHeader =
     Div [Class "navbar-header"] -< [
         navToggle
-        A [Class "navbar-brand"; HRef "/"] -< [
-            Img [Src "/Images/logo.png"; Alt "F# Logo"; Id "logo"]
-        ]
+//        A [Class "navbar-brand"; HRef "/"] -< [
+//            Img [Src "/Images/logo.png"; Alt "F# Logo"; Id "logo"]
+//        ]
 //        A [Class "navbar-brand visible-xs"; HRef "/"] -< [Text "FSSF"]
     ]
 
@@ -112,7 +112,7 @@ let navDiv activeLi ctx =
 
 let navElt activeLi ctx : Content.HtmlElement =
     HTML5.Nav [
-        Class "navbar navbar-default navbar-fixed-top"
+        Class "navbar navbar-inverse navbar-fixed-top"
         NewAttribute "role" "navigation"
     ] -< [
         Div [Class "container"] -< [

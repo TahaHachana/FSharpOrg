@@ -1,18 +1,25 @@
-﻿/* Shared */
-.navbar {
-    margin-bottom: 0;
+﻿/* Navbar */
+
+.navbar-inverse {
+    background-color: rgb(44, 62, 80); 
 }
 
-.navbar-default {
-    background-color: white;
+.navbar-inverse .navbar-nav>li>a
+{
+    color: lightgray;
 }
 
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 50px;
-    height: 50px;
-    padding-top: 0;
-}
+.navbar-inverse .navbar-nav>.active>a
+{
+color: white;}
+
+
+
+
+
+
+
+
 
 body {
     font-family: 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
@@ -20,6 +27,11 @@ body {
 
 #main {
     padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+#home-section-1 {
+    background-color: rgb(20, 29, 39);
 }
 
 footer {
@@ -33,7 +45,15 @@ footer {
 
 #download-btn {
     color: white;
-    background-color: #1B68A2;
+    background-color: rgb(66, 139, 202);
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+    border: none;
+}
+
+#download-btn:hover {
+    background-color: #3071a9;
 }
 
 #push {
@@ -46,19 +66,39 @@ footer {
 
 /* Home */
 .jumbotron {
-    background-color: whitesmoke;
-    color: #1B68A2;
-    font-size: 60px;
+/*background: -webkit-linear-gradient(left, white, rgb(20, 29, 39));
+  background: -o-linear-gradient(right, white, rgb(20, 29, 39));
+  background: -moz-linear-gradient(right, white, rgb(20, 29, 39));
+  background: linear-gradient(to right, white, #2980b9);*/
+    /*background-color: rgb(20, 29, 39);*/
+background: linear-gradient(to bottom right, white, rgb(20, 29, 39) 30%);
+    color: white;
+    /*background-color: #2980b9;
+    color: white;*/
+
     margin-bottom: 0;
     padding-bottom: 0;
 }
 
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+.jumbotron p, #home-section-1 {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
 #logo {
-    width: 50px;
+    margin: 40px auto;
 }
 
 .light-gray {
-    background: whitesmoke;
+    background: rgb(234, 241, 241); /*whitesmoke;*/
+}
+
+.social-btn {
+    margin: 5px;
 }
 
 .home-section {
@@ -127,7 +167,7 @@ footer {
     width: 75%;
 }
 
-#news-list>li {background-color: whitesmoke;}
+#news-list>li {background-color: rgb(234, 241, 241);}
 
 .footer-links {
     list-style-type: none;
