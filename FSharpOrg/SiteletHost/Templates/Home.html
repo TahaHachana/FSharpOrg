@@ -46,7 +46,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-default btn-lg btn-home dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
                         <span class="glyphicon glyphicon-download-alt"></span>
-                        Download F# <span class="caret"></span>
+                        Install F# <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Windows</a></li>
@@ -114,8 +114,8 @@
             <div style="color: red; font-weight: bold;">Copied from F# for fun and profit, to be replaced with custom content.</div>
             <div class="row wow animated fadeIn">
                 <div class="col-md-7">
-                    <h2 class="hidden-xs">Concise</h2>
-                    <h2 class="featurette-heading visible-xs">Concise</h2>
+                    <h2 class="featurette-heading hidden-xs">Concise</h2>
+                    <h2 class="visible-xs">Concise</h2>
                     <p class="lead">F# is not cluttered up with coding "noise" such as curly brackets, semicolons and so on.</p>
                 </div>
                 <div class="col-md-5">
@@ -143,8 +143,14 @@ type Person = {First:string; Last:string}
                 </div>
             </div>
             <hr class="featurette-hr" />
-            <div class="row wow animated fadeIn">
-                <div class="col-md-5">
+            <div class="row wow animated fadeIn backwards">
+                <div class="col-md-7 col-md-push-5">
+                    <h2 class="featurette-heading hidden-xs">Correct</h2>
+                    <h2 class="visible-xs">Correct</h2>
+                    <p class="lead">F# has a powerful type system which prevents many common errors such as null reference exceptions.</p>
+                </div>
+
+                <div class="col-md-5 col-md-pull-7">
                     <pre>
 <span class="fs-comment">// strict type checking</span>
 printfn <span class="fs-string">"print string %s"</span> 123 <span class="fs-comment">//compile error</span>
@@ -167,11 +173,6 @@ emptyShoppingCart.remove <span class="fs-comment">// compile error!</span>
 <span class="fs-comment">// units of measure</span>
 let distance = 10&lt;m&gt; + 10&lt;ft&gt; <span class="fs-comment">// error!</span>
 </pre>
-                </div>
-                <div class="col-md-7">
-                    <h2 class="featurette-heading hidden-xs">Correct</h2>
-                    <h2 class="visible-xs">Correct</h2>
-                    <p class="lead">F# has a powerful type system which prevents many common errors such as null reference exceptions.</p>
                 </div>
             </div>
 
@@ -303,7 +304,7 @@ MailboxProcessor.Start(fun inbox-> <span class="fs-keyword">async</span> {
         </div>
     </section>
 
-    <section data-replace="body" class="wow animated fadeIn">BODY</section>
+    <section data-replace="body">BODY</section>
 
     <section class="home-section wow animated fadeIn">
         <div class="container featured">
@@ -421,45 +422,45 @@ MailboxProcessor.Start(fun inbox-> <span class="fs-keyword">async</span> {
     <section style="padding-top: 50px;" class="wow animated fadeIn">
         <div class="container featured">
             <div class="row">
-                <div class="col-md-2 col-md-offset-1">
+                <div class="col-md-2 col-md-offset-1 menu">
                     <h4>Groups</h4>
                     <ul class="footer-links">
-                        <li><a href="#" class="text-muted">Technical Groups</a></li>
-                        <li><a href="#" class="text-muted">User Groups</a></li>
-                        <li><a href="#" class="text-muted">Coding Dojos</a></li>
+                        <li><a href="#">Technical Groups</a></li>
+                        <li><a href="#">User Groups</a></li>
+                        <li><a href="#">Coding Dojos</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 menu">
                     <h4>Guides</h4>
                     <ul class="footer-links">
-                        <li><a href="#" class="text-muted">F# For Fun And Profit</a></li>
-                        <li><a href="#" class="text-muted">WikiBook</a></li>
+                        <li><a href="#">F# For Fun And Profit</a></li>
+                        <li><a href="#">WikiBook</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 menu">
                     <h4>Build</h4><ul class="footer-links">
-                        <li><a href="#" class="text-muted">HTML5 Apps</a></li>
-                        <li><a href="#" class="text-muted">Android Apps</a></li>
-                        <li><a href="#" class="text-muted">iOS Apps</a></li>
-                        <li><a href="#" class="text-muted">GPU Programming</a></li>
+                        <li><a href="#">HTML5 Apps</a></li>
+                        <li><a href="#">Android Apps</a></li>
+                        <li><a href="#">iOS Apps</a></li>
+                        <li><a href="#">GPU Programming</a></li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 menu">
                     <h4>Forums</h4><ul class="footer-links">
-                        <li><a href="#" class="text-muted">StackOverflow</a></li>
-                        <li><a href="#" class="text-muted">FPish</a></li>
-                        <li><a href="#" class="text-muted">StackExchange</a></li>
-                        <li><a href="#" class="text-muted">MSDN</a></li>
-                        <li><a href="#" class="text-muted">IRC</a> (<a href="#" class="text-muted">Archive</a>)</li>
+                        <li><a href="#">StackOverflow</a></li>
+                        <li><a href="#">FPish</a></li>
+                        <li><a href="#">StackExchange</a></li>
+                        <li><a href="#">MSDN</a></li>
+                        <li><a href="#">IRC</a> (<a href="#">Archive</a>)</li>
                     </ul>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 menu">
                     <h4>Follow</h4>
 
                     <!-- AddThis Follow BEGIN -->
                     <![CDATA[<div class="addthis_toolbox addthis_32x32_style addthis_vertical_style">
-                        <a class="addthis_button_facebook_follow text-muted" addthis:userid="fsharp.org"></a>
-                        <a class="addthis_button_twitter_follow text-muted" addthis:userid="fsharp.org"></a>
+                        <a class="addthis_button_facebook_follow" addthis:userid="fsharp.org"></a>
+                        <a class="addthis_button_twitter_follow" addthis:userid="fsharp.org"></a>
                     </div>
                     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
                     <!-- AddThis Follow END -->

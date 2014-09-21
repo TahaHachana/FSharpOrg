@@ -39,6 +39,19 @@ body {
     color: white;
 }
 
+.menu h4 {
+    color: #888;
+    margin-top: 30px;
+}
+
+.menu ul, .menu div {
+    margin-top: 20px;
+}
+
+.menu ul li, .menu div a {
+    margin-bottom: 9px;
+}
+
 #footer-arrow {
     position: absolute;
     top: -40px;

@@ -9,7 +9,7 @@ module Home =
     let nav ctx = navElt (Some "Home") ctx
 
     let body ctx : Content.HtmlElement =
-        HTML5.Section [Class "home-section light-gray"] -< [
+        HTML5.Section [Class "home-section light-gray wow animated fadeIn"] -< [
             Div [Class "container featured"] -< [
                 H2 [Class "text-center section-header"] -< [
                     Text "News"
