@@ -117,6 +117,8 @@
     <Content Include="Scripts\WebSharper\Sitelet.d.ts" />
     <Content Include="Scripts\WebSharper\Sitelet.js" />
     <Content Include="Scripts\WebSharper\Sitelet.min.js" />
+    <Content Include="Scripts\wow.min.js" />
+    <Content Include="StyleSheets\animate.css" />
     <Content Include="StyleSheets\StyleSheet1.css" />
     <Content Include="Templates\About.html" />
     <Content Include="Templates\Admin.html" />

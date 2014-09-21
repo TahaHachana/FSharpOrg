@@ -1,18 +1,16 @@
 ﻿/* Navbar */
 
-.navbar-inverse {
-    background-color: rgb(44, 62, 80); 
+.navbar-default {
+    background-color: white; 
+    /*background-color: white;*/ 
+    padding: 10px;
 }
 
-.navbar-inverse .navbar-nav>li>a
-{
-    color: lightgray;
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+color: rgb(54, 65, 78);
+background-color: white;
+font-weight: bold;
 }
-
-.navbar-inverse .navbar-nav>.active>a
-{
-color: white;}
-
 
 
 
@@ -34,9 +32,28 @@ body {
     background-color: rgb(20, 29, 39);
 }
 
-footer {
+#footer {
     /*border-top: 1px solid #ddd;*/
-    padding-top: 20px;
+    padding-top: 40px;
+    background-color: rgb(54, 65, 78);
+    color: white;
+}
+
+#footer-arrow {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -40px;
+    width: 80px;
+    height: 80px;
+    background: rgb(54, 65, 78);
+    border-radius: 40px;
+    color: white;
+}
+
+#footer-arrow .glyphicon {
+    top: 15px;
+
 }
 
 .btn-home {
@@ -71,7 +88,8 @@ footer {
   background: -moz-linear-gradient(right, white, rgb(20, 29, 39));
   background: linear-gradient(to right, white, #2980b9);*/
     /*background-color: rgb(20, 29, 39);*/
-background: linear-gradient(to bottom right, white, rgb(20, 29, 39) 30%);
+    background: radial-gradient(rgb(54, 65, 78), rgb(37, 50, 65));
+/*background: linear-gradient(to bottom right, white, rgb(54, 65, 78) 30%);*/
     color: white;
     /*background-color: #2980b9;
     color: white;*/
@@ -80,14 +98,14 @@ background: linear-gradient(to bottom right, white, rgb(20, 29, 39) 30%);
     padding-bottom: 0;
 }
 
-.jumbotron h1 {
+/*.jumbotron h1 {
     font-size: 50px;
 }
 
 .jumbotron p, #home-section-1 {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.8)
-}
+}*/
 
 #logo {
     margin: 40px auto;

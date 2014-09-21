@@ -53,7 +53,7 @@ let li activeLiOption href txt =
 
 let navDiv activeLi ctx =
     Div [Class "collapse navbar-collapse"] -< [
-        UL [Class "nav navbar-nav"] -< [
+        UL [Class "nav navbar-nav navbar-right"] -< [
             li activeLi "/" "Home"
 //            LI [Class "dropdown"] -< [
 //                A [HRef "#"; Class "dropdown-toggle"; HTML5.Data "toggle" "dropdown"] -< [
@@ -112,7 +112,7 @@ let navDiv activeLi ctx =
 
 let navElt activeLi ctx : Content.HtmlElement =
     HTML5.Nav [
-        Class "navbar navbar-inverse navbar-fixed-top"
+        Class "navbar navbar-default navbar-fixed-top"
         NewAttribute "role" "navigation"
     ] -< [
         Div [Class "container"] -< [
