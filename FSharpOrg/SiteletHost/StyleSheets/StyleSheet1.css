@@ -29,7 +29,7 @@ color: white;
 .navbar-default .navbar-nav > li > a {
     color: #fff;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     /*font-weight: 600;*/
     padding-top: 20px;
     padding-bottom: 20px;
@@ -70,7 +70,8 @@ nav.affix {
 }
 
 body {
-    font-family: Railway, 'open sans', 'helvetica neue', helvetica, arial, sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
 }
 
 #main {
@@ -136,14 +137,14 @@ padding: 20px 30px;
 text-transform: uppercase;
 color: rgba(255,255,255,0.6);
 border: solid #FFF 2px;
-font-size: 22px;
+font-size: 20px;
 /*font-weight: 700;*/
 background-color: transparent;
 -webkit-transition: all ease-in .15s;
 -moz-transition: all ease-in .15s;
 -o-transition: all ease-in .15s;
 transition: all ease-in .15s;
-width: 250px;
+width: auto;
 /*margin-bottom: 20px;*/
 }
 
@@ -153,12 +154,9 @@ width: 250px;
 }
 
 .push {
-    height: 50px;
+    height: 70px;
 }
 
-.lead {
-    font-size: 19px;
-}
 
 /* Home */
 .jumbotron {
@@ -180,8 +178,7 @@ width: 250px;
 }
 
 .lead, .jumbotron .lead {
-    font-size: 22px;
-    font-weight: 300;
+    font-size: 25px;
 letter-spacing: 1px;
 line-height: 40px;
 
@@ -193,7 +190,7 @@ line-height: 40px;
 
 .tab-pane .row {padding: 20px;}
 
-.nav-tabs > li {
+.nav-tabs-big > li {
     font-size: 22px;
     font-weight: 300;
     padding: 0;
@@ -201,7 +198,7 @@ line-height: 40px;
     text-align: center;
 }
 
-/*.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+/*.nav-tabs-big > li.active > a, .nav-tabs-big > li.active > a:hover, .nav-tabs-big > li.active > a:focus {
     color: #555;
     background-color: #fff;
     border: 1px solid #ddd;
@@ -213,21 +210,21 @@ border-bottom: 2px solid #c4c4c4;
 
 }*/
 
-.nav-tabs > li a {
+.nav-tabs-big > li a {
 padding: 15px;
 color: black;
 font-size: 30px;
 /*color: #777;*/
 }
 
-.nav-tabs > li.active a, .nav-tabs > li a:hover {
+.nav-tabs-big > li.active a, .nav-tabs-big > li a:hover {
     /*color: #777;*/
     border: none;
     border-bottom: 2px solid #c4c4c4;
 
 }
 
-.nav-tabs>li.active>a:hover {
+.nav-tabs-big>li.active>a:hover {
     background: #eee;
     border: none;
     border-bottom: 2px solid #c4c4c4;
@@ -264,9 +261,15 @@ font-size: 30px;
     margin-top: 10px;
 }
 
+.dropdown-menu {
+    font-size: 20px;
+}
+
 .dropdown-menu > li {
     text-align: left;
 }
+
+h3 {font-size: 30px;}
 
 .home-rule {
     width: 200px;
@@ -311,7 +314,7 @@ font-size: 30px;
     width: 75%;
 }
 
-#news-list>li {background-color: rgb(234, 241, 241);}
+#news-list>li {background-color: #eef1f5;}
 
 .footer-links {
     list-style-type: none;

@@ -11,9 +11,9 @@
 
     <!--<link rel="shortcut icon" href="/Images/Favicon.png" type="image/x-icon" />
     <link rel="icon" href="/Images/Favicon.png" type="image/x-icon" />-->
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <!--<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <link href='http://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet' type='text/css' />
+
     <link href="/StyleSheets/animate.css" rel="stylesheet" media="screen" />
     <link href="/StyleSheets/vs.css" rel="stylesheet" media="screen" />
     <link href="/StyleSheets/StyleSheet1.css" rel="stylesheet" media="screen" />
@@ -28,45 +28,39 @@
     <!-- Jumbotron -->
     <section class="jumbotron" id="main">
         <div class="container">
-            <div class="text-right">
-
-                <a href="#" class="btn btn-default social-btn btn-circle-1"><img src="../Images/Twitter.png" /></a>
-                <a href="#" class="btn btn-default social-btn btn-circle-1"><img src="../Images/Facebook.png" /></a>
+            <div class="text-right" style="margin-bottom: 30px;">
+                <a href="https://twitter.com/fsharporg" target="_blank" class="btn btn-default social-btn btn-circle-1"><img src="../Images/Twitter.png" /></a>
+                <a href="http://www.facebook.com/fsharp.org" target="_blank" class="btn btn-default social-btn btn-circle-1"><img src="../Images/Facebook.png" /></a>
             </div>
 
-            <div class="animated bounce">
-                <img src="../Images/logo.png" class="img-responsive img-rounded" alt="F# Logo" id="logo" />
-            </div>
+            <div class="row" style="width: 90%; margin: 0 auto;">
+                <div class="col-md-6">
+                    <p class="lead">F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
 
-            <div class="text-center" style="
-    width: 60%;
-    margin: 0 auto;
-">
-                <!--<h1 class="animated zoomIn">F# Software Foundation</h1>-->
-                <p class="lead">F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
-
-                <!--<div class="">
-                    <a href="https://twitter.com/fsharporg" target="_blank" class="btn btn-default social-btn btn-circle"><img src="../Images/Twitter.png" /></a>
-                    <a href="http://www.facebook.com/fsharp.org" target="_blank" class="btn btn-default social-btn btn-circle"><img src="../Images/Facebook.png" /></a>
-                </div>-->
-                <!--<p>F# runs on Linux, Mac OS X, Android, iOS, Windows, GPUs, and HTML5. It is free to use and is open source under an OSI-approved license. F# is used in a wide range of application areas and is supported by both an active open community and industry-leading companies providing professional tools.</p>-->
-                <div class="btn-group">
-                    <button type="button" class="btn dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
-                        <span class="glyphicon glyphicon-download-alt"></span>
-                        Install F# <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="/use/windows/">Windows</a></li>
-                        <li><a href="/use/mac/">Mac</a></li>
-                        <li><a href="/use/linux/">Linux</a></li>
-                        <li><a href="/use/freebsd/">FreeBSD</a></li>
-
-                    </ul>
                 </div>
-                <div class="push"></div>
+                <div class="col-md-6 text-center">
+                    <div class="animated bounce"><img src="../Images/logo.png" class="img-responsive img-rounded" alt="F# Logo" id="logo" /></div>
+                    <div class="btn-group">
+                        <button type="button" class="btn dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                            Install F# <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Windows</a></li>
+                            <li><a href="#">Mac</a></li>
+                            <li><a href="#">Linux</a></li>
+                            <li><a href="#">FreeBSD</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
             </div>
+            <div class="push"></div>
         </div>
     </section>
+
+                
 
     <!-- Navigation -->
     <nav class="navbar navbar-default affix" role="navigation">
@@ -260,7 +254,12 @@
             <!--<div style="color: red; font-weight: bold;">Copied from F# for fun and profit, to be replaced with custom content.</div>-->
             <div class="row wow animated fadeIn">
                 <!-- Nav tabs -->
-                <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs nav-tabs-big hidden-xs" role="tablist">
+                    <li class="active"><a href="#concise" role="tab" data-toggle="tab">Concise</a></li>
+                    <li><a href="#correct" role="tab" data-toggle="tab">Correct</a></li>
+                    <li><a href="#concurrent" role="tab" data-toggle="tab">Concurrent</a></li>
+                </ul>
+                <ul class="nav nav-tabs visible-xs-block" role="tablist">
                     <li class="active"><a href="#concise" role="tab" data-toggle="tab">Concise</a></li>
                     <li><a href="#correct" role="tab" data-toggle="tab">Correct</a></li>
                     <li><a href="#concurrent" role="tab" data-toggle="tab">Concurrent</a></li>
@@ -369,6 +368,45 @@ MailboxProcessor.Start(fun inbox-> async{
 
     <section class="home-section light-gray">
         <div class="container featured">
+            <div class="">
+                <h2 class="text-center section-header">Getting Started</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4 wow animated flipInY">
+                    <h3><span class="glyphicon glyphicon-pencil"></span> Learn</h3>
+                    <ul class="">
+                        <li>Learn F# online with <a href="http://www.tryfsharp.org/Learn" target="_blank">Try F#</a></li>
+                        <li>Read <a href="/about/learning.html">F# books and tutorials</a></li>
+                        <li>Read the <a href="/about/index.html#documentation">Documentation</a> and dive into the technical aspects</li>
+                        <li>Watch <a href="/videos/1">F# vidoes</a></li>
+                    </ul>
+                    </div>       
+                <div class="col-md-4 wow animated flipInY">
+                    <h3><span class="glyphicon glyphicon-user"></span> Community</h3>
+                    <ul>
+                        <li>Ask questions on <a href="http://stackoverflow.com/questions/tagged/f%23" target="_blank">StackOverflow</a>, <a href="#">FPish</a> and <a href="#">MSDN</a></li>
+                        <li>Attend <a href="http://c4fsharp.net/events.html" target="_blank">F# events</a> and join user groups</li>
+                        <li>Start your new open source project in F# or contribute to <a href="/community/projects/">existing ones</a></li>
+                        <li>Gain skills with <a href="/training">commercial training</a> and <a href="/consulting">support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 wow animated flipInY">
+                    <h3><span class="glyphicon glyphicon-bullhorn"></span> Spread the word</h3>
+                    <ul>
+                        <li><a href="#">Tweet about F#</a></li>
+                        <li>Give a talk about F#</li>
+                        <li>Start a local user group</li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--<section class="home-section light-gray">
+        <div class="container featured">
             <div class="row wow animated fadeInUp">
                 <div class="col-md-6"><h2 class="section-header">Getting Started</h2></div>
                 <div class="col-md-6">
@@ -397,7 +435,7 @@ MailboxProcessor.Start(fun inbox-> async{
 
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!--<section class="home-section">
         <div class="container featured">
@@ -627,7 +665,7 @@ MailboxProcessor.Start(fun inbox-> async{
                         <a class="addthis_button_facebook_follow" addthis:userid="fsharp.org"></a>
                         <a class="addthis_button_twitter_follow" addthis:userid="fsharporg"></a>
                     </div>
-                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54207a8d10b4461b"></script>
                     <!-- AddThis Follow END -->
                     ]]>
                 </div>
@@ -646,7 +684,7 @@ MailboxProcessor.Start(fun inbox-> async{
 
     <!-- JS -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="/Scripts/wow.min.js"></script>
     <script src="/Scripts/highlight.pack.js"></script>
     <script>
@@ -665,7 +703,7 @@ MailboxProcessor.Start(fun inbox-> async{
     </script>
     ]]>
 
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50af450141ce9366"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54207a8d10b4461b"></script>
     <![CDATA[
     <script type="text/javascript">
         addthis.layers({
