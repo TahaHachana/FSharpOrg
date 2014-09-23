@@ -112,8 +112,11 @@ let navDiv activeLi ctx =
 
 let navElt activeLi ctx : Content.HtmlElement =
     HTML5.Nav [
-        Class "navbar navbar-default navbar-fixed-top"
+        Class "navbar navbar-default" // navbar-fixed-top"
         NewAttribute "role" "navigation"
+//        HTML5.Data "spy" "affix"
+//        //data-offset-top="60"
+//        HTML5.Data "offset-top" "60"
     ] -< [
         Div [Class "container"] -< [
             navHeader

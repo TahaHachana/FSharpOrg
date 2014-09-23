@@ -57,6 +57,8 @@
     <Content Include="Images\Facebook.png" />
     <Content Include="Images\Favicon.png" />
     <Content Include="Images\FeedIcon.png" />
+    <Content Include="Images\glyphicons_social_30_facebook.png" />
+    <Content Include="Images\glyphicons_social_31_twitter.png" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Sponsors\extremeoptimization.png" />
     <Content Include="Images\Sponsors\ffconsultancy.png" />
@@ -75,6 +77,7 @@
     <Content Include="Images\Sponsors\xamarin.png" />
     <Content Include="Images\Twitter.png" />
     <Content Include="robots.txt" />
+    <Content Include="Scripts\highlight.pack.js" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.d.ts" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.js" />
     <Content Include="Scripts\WebSharper\IntelliFactory.Formlet.min.js" />
@@ -120,6 +123,7 @@
     <Content Include="Scripts\wow.min.js" />
     <Content Include="StyleSheets\animate.css" />
     <Content Include="StyleSheets\StyleSheet1.css" />
+    <Content Include="StyleSheets\vs.css" />
     <Content Include="Templates\About.html" />
     <Content Include="Templates\Admin.html" />
     <Content Include="Templates\Error.html" />

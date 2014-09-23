@@ -125,7 +125,7 @@
       {
        var arg10;
        arg10=x1.link;
-       return _ul_43_1.AppendI(Operators.add(Default.LI(List.ofArray([Default.Attr().Class("list-group-item")])),List.ofArray([Operators.add(Default.H4(List.ofArray([Default.Attr().Class("list-group-item-heading")])),List.ofArray([Default.A(List.ofArray([Default.Attr().NewAttr("href",arg10),Default.Attr().NewAttr("target","_blank"),Default.Text(x1.title)]))])),Default.P(List.ofArray([Default.Text(x1.contentSnippet)]))])));
+       return _ul_43_1.AppendI(Operators.add(Default.LI(List.ofArray([Default.Attr().Class("list-group-item wow animated rotateInUpLeft")])),List.ofArray([Operators.add(Default.H4(List.ofArray([Default.Attr().Class("list-group-item-heading")])),List.ofArray([Default.A(List.ofArray([Default.Attr().NewAttr("href",arg10),Default.Attr().NewAttr("target","_blank"),Default.Text(x1.title)]))])),Default.P(List.ofArray([Default.Text(x1.contentSnippet)]))])));
       },x);
      }));
      return _ul_43_1;

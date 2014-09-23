@@ -18,7 +18,7 @@ let about =
         "About Meta Description"
         "About Title"
         About.nav
-        About.body
+        Home.body
 
 let sub pageId =
     let pageIdStr = string pageId

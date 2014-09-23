@@ -9,9 +9,9 @@ module Home =
     let nav ctx = navElt (Some "Home") ctx
 
     let body ctx : Content.HtmlElement =
-        HTML5.Section [Class "home-section light-gray wow animated fadeIn"] -< [
+        HTML5.Section [Class "home-section light-gray"] -< [
             Div [Class "container featured"] -< [
-                H2 [Class "text-center section-header"] -< [
+                H2 [Class "text-center section-header wow animated fadeInUp"] -< [
                     Text "News"
                     A [HRef "http://fpish.net/rss/blogs/tag/1/f~23"; Id "news-rss"] -< [
                         Img [Src "/Images/FeedIcon.png"; Alt "RSS Feed"]

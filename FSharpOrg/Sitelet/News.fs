@@ -49,7 +49,7 @@ let main =
         |> fun x -> x.[..4]
         |> Array.iter (fun x ->
             let li =
-                LI [Attr.Class "list-group-item"] -< [
+                LI [Attr.Class "list-group-item wow animated rotateInUpLeft"] -< [
                     H4 [Attr.Class "list-group-item-heading"] -< [
                         A [Attr.HRef x.link; Attr.Target "_blank"; Text x.title]
                     ]
