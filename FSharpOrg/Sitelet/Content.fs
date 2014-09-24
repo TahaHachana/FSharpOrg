@@ -11,7 +11,7 @@ module Home =
     let body ctx : Content.HtmlElement =
         HTML5.Section [Class "home-section light-gray"] -< [
             Div [Class "container featured"] -< [
-                H2 [Class "text-center section-header wow animated fadeInUp"] -< [
+                H2 [Class "text-center section-header"] -< [
                     Text "News"
                     A [HRef "http://fpish.net/rss/blogs/tag/1/f~23"; Id "news-rss"] -< [
                         Img [Src "/Images/FeedIcon.png"; Alt "RSS Feed"]

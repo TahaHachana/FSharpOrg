@@ -34,22 +34,22 @@
             </div>
 
             <div class="row" style="width: 90%; margin: 0 auto;">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <p class="lead">F# is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.</p>
 
                 </div>
-                <div class="col-md-6 text-center">
-                    <div class="animated bounce"><img src="../Images/logo.png" class="img-responsive img-rounded" alt="F# Logo" id="logo" /></div>
+                <div class="col-md-5 text-center">
+                    <div class="animated flipInY"><img src="../Images/logo.png" class="img-responsive img-rounded" alt="F# Logo" id="logo" /></div>
                     <div class="btn-group">
                         <button type="button" class="btn dropdown-toggle btn-menu" data-toggle="dropdown" id="download-btn">
                             <span class="glyphicon glyphicon-download-alt"></span>
                             Install F# <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Windows</a></li>
-                            <li><a href="#">Mac</a></li>
-                            <li><a href="#">Linux</a></li>
-                            <li><a href="#">FreeBSD</a></li>
+                            <li><a href="/use/windows/">Windows</a></li>
+                            <li><a href="/use/mac/">Mac</a></li>
+                            <li><a href="/use/linux/">Linux</a></li>
+                            <li><a href="/use/freebsd/">FreeBSD</a></li>
                         </ul>
                     </div>
 
@@ -311,7 +311,7 @@ let worker = Worker jdoe</code></pre>
 printfn "print string %s" 123 //compile error
 
 // all values immutable by default
-person1.First &lt;- "new name" />/assignment error 
+person1.First &lt;- "new name" //assignment error 
 
 // never have to check for nulls
 let makeNewString str = 
@@ -320,7 +320,7 @@ let makeNewString str =
    newString
 
 // embed business logic into types
-emptyShoppingCart.remove   // compile error!
+emptyShoppingCart.remove // compile error!
 
 // units of measure
 let distance = 10&lt;m&gt; + 10&lt;ft&gt; // error!</code></pre>
@@ -371,8 +371,8 @@ MailboxProcessor.Start(fun inbox-> async{
             <div class="">
                 <h2 class="text-center section-header">Getting Started</h2>
             </div>
-            <div class="row">
-                <div class="col-md-4 wow animated flipInY">
+            <div class="row wow animated fadeIn">
+                <div class="col-md-4">
                     <h3><span class="glyphicon glyphicon-pencil"></span> Learn</h3>
                     <ul class="">
                         <li>Learn F# online with <a href="http://www.tryfsharp.org/Learn" target="_blank">Try F#</a></li>
@@ -381,21 +381,21 @@ MailboxProcessor.Start(fun inbox-> async{
                         <li>Watch <a href="/videos/1">F# vidoes</a></li>
                     </ul>
                     </div>       
-                <div class="col-md-4 wow animated flipInY">
+                <div class="col-md-4">
                     <h3><span class="glyphicon glyphicon-user"></span> Community</h3>
                     <ul>
-                        <li>Ask questions on <a href="http://stackoverflow.com/questions/tagged/f%23" target="_blank">StackOverflow</a>, <a href="#">FPish</a> and <a href="#">MSDN</a></li>
-                        <li>Attend <a href="http://c4fsharp.net/events.html" target="_blank">F# events</a> and join user groups</li>
+                        <li>Ask questions on <a href="http://stackoverflow.com/questions/tagged/f%23" target="_blank">StackOverflow</a>, <a href="http://fpish.net/" target="_blank">FPish</a> and <a href="http://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=fsharpgeneral" target="_blank">MSDN</a></li>
+                        <li>Attend <a href="http://c4fsharp.net/events.html" target="_blank">F# events</a> and join <a href="http://c4fsharp.net/groups.html" target="_blank">user groups</a></li>
                         <li>Start your new open source project in F# or contribute to <a href="/community/projects/">existing ones</a></li>
                         <li>Gain skills with <a href="/training">commercial training</a> and <a href="/consulting">support</a></li>
                     </ul>
                 </div>
-                <div class="col-md-4 wow animated flipInY">
+                <div class="col-md-4">
                     <h3><span class="glyphicon glyphicon-bullhorn"></span> Spread the word</h3>
                     <ul>
-                        <li><a href="#">Tweet about F#</a></li>
+                        <li><a href="https://twitter.com/intent/tweet?text=Learning%20about%20the%20%23FSharp%20programming%20language%20at%20http%3A%2F%2Ffsharp.org%2F%20home%20of%20%40fsharporg" target="_blank">Tweet about F#</a></li>
                         <li>Give a talk about F#</li>
-                        <li>Start a local user group</li>
+                        <li>Start a user group</li>
                     </ul>
 
                 </div>
@@ -404,60 +404,11 @@ MailboxProcessor.Start(fun inbox-> async{
         </div>
     </section>
 
-
-    <!--<section class="home-section light-gray">
-        <div class="container featured">
-            <div class="row wow animated fadeInUp">
-                <div class="col-md-6"><h2 class="section-header">Getting Started</h2></div>
-                <div class="col-md-6">
-                    <h3><span class="glyphicon glyphicon-pencil"></span> Learn</h3>
-                    <ul>
-                        <li>Learn F# online with <a href="#">Try F#</a></li>
-                        <li>Read <a href="#">F# books and tutorials</a></li>
-                        <li>Read the <a href="#">Documentation</a> and dive into the technical aspects</li>
-                        <li>Watch <a href="#">F# vidoes</a></li>
-                    </ul>
-                    <h3><span class="glyphicon glyphicon-user"></span> Community</h3>
-                    <ul>
-                        <li>Ask questions on <a href="#">StackOverflow</a>, <a href="#">FPish</a> and <a href="#">MSDN</a></li>
-                        <li>Attend <a href="#">F# events</a> and join user groups</li>
-                        <li>Start your new open source project in F# or contribute to <a href="#">existing ones</a></li>
-                        <li>Gain skills with <a href="#">commercial training</a> and <a href="#">support</a></li>
-                    </ul>
-                    <h3><span class="glyphicon glyphicon-bullhorn"></span> Spread the word</h3>
-                    <ul>
-                        <li><a href="#">Tweet about F#</a></li>
-                        <li>Give a talk about F#</li>
-                        <li>Start a local user group</li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div>
-    </section>-->
-
-    <!--<section class="home-section">
-        <div class="container featured">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2><span class="glyphicon glyphicon-pencil"></span> Learn</h2>
-                    <p>Learn F# online with <a href="http://tryfsharp.org/Learn">Try F#</a>, read <a href="/about/learning.html">books and tutorials</a> and watch <a href="/videos/1">F# talks</a>.</p>
-
-                </div>
-                <div class="col-md-6">
-                    <h2><span class="glyphicon glyphicon-user"></span> Community</h2>
-                    <p>Ask questions on <a href="http://stackoverflow.com/tags/f%23/info">StackOverflow</a>, join <a href="/groups/">F# user groups</a>, contribute to <a href="/community/projects/">open source projects</a>, gain skills with <a href="/training">F# trainings</a> and hire <a href="/consulting">professional F# consultants</a>.</p>
-                </div>
-            </div>
-        </div>
-    </section>-->
-
     <section class="home-section">
         <div class="container featured">
-            <div class="wow animated fadeInUp">
+            <div>
                 <h2 class="text-center section-header">Testimonials</h2>
-                <div class="row">
+                <div class="row wow animated fadeIn">
                     <div class="col-md-6">
                         <blockquote>
                             <p>We see great potential for F# to be used as a scripting language in CAD, it fits very well for computational design challenges in the construction industry.</p>
@@ -509,9 +460,9 @@ MailboxProcessor.Start(fun inbox-> async{
     <section data-replace="body">BODY</section>
 
     <section class="home-section">
-        <div class="container featured wow animated fadeInUp">
+        <div class="container featured">
             <h2 class="text-center section-header">Corporate Sponsors</h2>
-            <div id="sponsors-carousel" class="carousel slide" data-ride="carousel">
+            <div id="sponsors-carousel" class="carousel slide wow animated fadeIn" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="item active">
                         <div class="row">
@@ -623,7 +574,7 @@ MailboxProcessor.Start(fun inbox-> async{
 
     <section style="padding-top: 50px;">
         <div class="container featured">
-            <div class="row wow animated fadeInUp">
+            <div class="row wow animated fadeIn">
                 <div class="col-md-2 col-md-offset-1 menu">
                     <h4>Groups</h4>
                     <ul class="footer-links">
@@ -672,11 +623,15 @@ MailboxProcessor.Start(fun inbox-> async{
             </div>
         </div>
     </section>
+    
     <div class="push"></div>
+
     <!-- Footer -->
     <footer id="footer">
         <div class="container text-center">
-            <a href="#main" id="footer-arrow"><span class="glyphicon glyphicon-arrow-up"></span></a>
+            <a href="#main" id="footer-arrow"><img src="../Images/arrow.png" /></a>
+
+            <!--<a href="#main" id="footer-arrow"><span class="glyphicon glyphicon-arrow-up"></span></a>-->
             <p>F# Software Foundation</p>
             <p>Maintained by the F# community on <a href="https://github.com/fsharp/fsfoundation" target="_blank">GitHub</a>.</p>
         </div>

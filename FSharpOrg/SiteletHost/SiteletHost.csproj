@@ -54,6 +54,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\arrow.png" />
     <Content Include="Images\Facebook.png" />
     <Content Include="Images\Favicon.png" />
     <Content Include="Images\FeedIcon.png" />

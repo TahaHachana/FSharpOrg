@@ -40,7 +40,7 @@ and Entry =
 
 [<JavaScript>]
 let main =
-    let ul = UL [Attr.Class "list-group"; Attr.Id "news-list"]
+    let ul = UL [Attr.Class "list-group wow animated fadeIn"; Attr.Id "news-list"]
     let url = "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=10&callback=?&q=http%3A%2F%2Ffpish.net%2Frss%2Fblogs%2Ftag%2F1%2Ff~23"
     JQuery.GetJSON(url, (fun (data, _) ->
         let data = As<Response> data
@@ -49,7 +49,7 @@ let main =
         |> fun x -> x.[..4]
         |> Array.iter (fun x ->
             let li =
-                LI [Attr.Class "list-group-item wow animated rotateInUpLeft"] -< [
+                LI [Attr.Class "list-group-item"] -< [
                     H4 [Attr.Class "list-group-item-heading"] -< [
                         A [Attr.HRef x.link; Attr.Target "_blank"; Text x.title]
                     ]
