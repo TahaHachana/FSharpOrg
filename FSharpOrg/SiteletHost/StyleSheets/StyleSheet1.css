@@ -150,7 +150,6 @@ background-color: transparent;
 -o-transition: all ease-in .15s;
 transition: all ease-in .15s;
 width: auto;
-/*margin-bottom: 20px;*/
 }
 
 #download-btn:hover {
@@ -200,6 +199,8 @@ line-height: 40px;
     .lead {
         font-size:23px;
     }
+
+    #download-btn {font-size: 18px;}
 
 }
 
@@ -251,7 +252,9 @@ font-size: 30px;
 }
 
 #logo {
-    margin: 20px auto;
+    margin: 0 auto;
+    max-height: 256px;
+    max-width: 256px;
 }
 
 .light-gray {
@@ -263,7 +266,7 @@ font-size: 30px;
 }
 
 .home-section {
-    padding: 60px 0 60px 0;
+    padding: 70px 0;
     border-bottom: 1px solid #ddd;
 }
 

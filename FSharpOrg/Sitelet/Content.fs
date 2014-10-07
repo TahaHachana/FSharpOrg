@@ -18,6 +18,7 @@ module Home =
                     ]
                 ] :> INode<_>
                 new News.Control() :> _
+                new Shuffle.Control() :> _
             ]
         ]
 

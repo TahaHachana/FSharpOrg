@@ -3,6 +3,17 @@ declare module Sitelet {
         interface Website {
         }
     }
+    module Shuffle {
+        interface Control {
+            get_Body(): __ABBREV.__Html.IPagelet;
+        }
+        var shuffle : {
+            <_M1>(array: _M1[]): _M1[];
+        };
+        var main : {
+            (): __ABBREV.__Html.Element;
+        };
+    }
     module News {
         interface Response {
             responseData: any;

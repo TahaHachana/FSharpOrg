@@ -1,6 +1,6 @@
 (function()
 {
- var Global=this,Runtime=this.IntelliFactory.Runtime,WebSharper,Piglets,Piglet1,Sitelet,Login,Client,Concurrency,Remoting,window,alert,LoginInfo,Pervasives,Validation,Html,Operators,Default,List,Controls,HTML5,jQuery,EventsPervasives,News,OperatorIntrinsics,Arrays;
+ var Global=this,Runtime=this.IntelliFactory.Runtime,WebSharper,Piglets,Piglet1,Sitelet,Login,Client,Concurrency,Remoting,window,alert,LoginInfo,Pervasives,Validation,Html,Operators,Default,List,Controls,HTML5,jQuery,EventsPervasives,News,OperatorIntrinsics,Arrays,Shuffle,T,IntrinsicFunctionProxy,Math,Number;
  Runtime.Define(Global,{
   Sitelet:{
    Login:{
@@ -130,6 +130,56 @@
      }));
      return _ul_43_1;
     })
+   },
+   Shuffle:{
+    Control:Runtime.Class({
+     get_Body:function()
+     {
+      return Shuffle.main();
+     }
+    }),
+    main:function()
+    {
+     var x;
+     x=Default.Div(Runtime.New(T,{
+      $:0
+     }));
+     Operators.OnAfterRender(function()
+     {
+      var array,array1;
+      array=jQuery(".sponsor-link").toArray();
+      array1=Arrays.zip(Arrays.map(function(elt)
+      {
+       return[elt.getAttribute("href"),jQuery(".sponsor",elt).attr("src")];
+      },Shuffle.shuffle(array)),jQuery(".sponsor-link").toArray());
+      return Arrays.iter(Runtime.Tupled(function(tupledArg)
+      {
+       var _arg1,elt,src;
+       _arg1=tupledArg[0];
+       elt=tupledArg[1];
+       src=_arg1[1];
+       elt.setAttribute("href",_arg1[0]);
+       return jQuery(".sponsor",elt).attr("src",src);
+      }),array1);
+     },x);
+     return x;
+    },
+    shuffle:function(array)
+    {
+     var currentIndex,randomIndex,temporaryValue;
+     currentIndex={
+      contents:IntrinsicFunctionProxy.GetLength(array)
+     };
+     while(currentIndex.contents!==0)
+      {
+       randomIndex=Math.floor(Math.random()*Number(currentIndex.contents));
+       currentIndex.contents=currentIndex.contents-1;
+       temporaryValue=array[currentIndex.contents];
+       array[currentIndex.contents]=array[randomIndex];
+       array[randomIndex]=temporaryValue;
+      }
+     return array;
+    }
    }
   }
  });
@@ -158,7 +208,12 @@
   EventsPervasives=Runtime.Safe(Html.EventsPervasives);
   News=Runtime.Safe(Sitelet.News);
   OperatorIntrinsics=Runtime.Safe(WebSharper.OperatorIntrinsics);
-  return Arrays=Runtime.Safe(WebSharper.Arrays);
+  Arrays=Runtime.Safe(WebSharper.Arrays);
+  Shuffle=Runtime.Safe(Sitelet.Shuffle);
+  T=Runtime.Safe(List.T);
+  IntrinsicFunctionProxy=Runtime.Safe(WebSharper.IntrinsicFunctionProxy);
+  Math=Runtime.Safe(Global.Math);
+  return Number=Runtime.Safe(Global.Number);
  });
  Runtime.OnLoad(function()
  {

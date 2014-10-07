@@ -113,6 +113,7 @@
     <Compile Include="Model.fs" />
     <Compile Include="Nav.fs" />
     <Compile Include="News.fs" />
+    <Compile Include="Shuffle.fs" />
     <Compile Include="Content.fs" />
     <Compile Include="Views.fs" />
     <Compile Include="Controller.fs" />
