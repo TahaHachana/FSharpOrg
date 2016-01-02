@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="testimonials.json" />
     <None Include="Properties\PublishProfiles\FSharpOrgFileSystem.pubxml" />
     <None Include="Properties\PublishProfiles\WebSharperMVCFileSystem.pubxml" />
     <None Include="Web.Release.config">

@@ -4,6 +4,12 @@ declare module Sitelet {
         }
     }
     module Shuffle {
+        interface Testimonial {
+            Permalink: string;
+            Text: string;
+            Link: string;
+            Author: string;
+        }
         interface Control {
             get_Body(): __ABBREV.__Html.IPagelet;
         }

@@ -27,11 +27,12 @@ module About =
     let nav ctx = navElt (Some "About") ctx
 
     let body ctx =            
-        Div [Class "container"] -< [
-            Div [Class "page-header"] -< [
-                H1 [Text "About Page Header"]
-            ]
-        ]
+        Div []
+//        Div [Class "container"] -< [
+//            Div [Class "page-header"] -< [
+//                H1 [Text "About Page Header"]
+//            ]
+//        ]
 
 module Sub =
 

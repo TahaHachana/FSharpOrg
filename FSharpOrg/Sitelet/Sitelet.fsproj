@@ -119,6 +119,7 @@
     <Compile Include="Controller.fs" />
     <Compile Include="Site.fs" />
     <None Include="packages.config" />
+    <Content Include="Script1.fsx" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -196,6 +197,10 @@
       <HintPath>..\packages\WebSharper.2.5.111.45\tools\net40\IntelliFactory.Xml.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />

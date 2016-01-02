@@ -146,21 +146,64 @@
      }));
      Operators.OnAfterRender(function()
      {
-      var array,array1;
-      array=jQuery(".sponsor-link").toArray();
-      array1=Arrays.zip(Arrays.map(function(elt)
+      var array,x1,srcs,array1;
+      array=jQuery(".carousel-link").toArray();
+      x1=Shuffle.shuffle(array);
+      srcs=Arrays.map(function(elt)
       {
-       return[elt.getAttribute("href"),jQuery(".sponsor",elt).attr("src")];
-      },Shuffle.shuffle(array)),jQuery(".sponsor-link").toArray());
-      return Arrays.iter(Runtime.Tupled(function(tupledArg)
+       return[elt.getAttribute("href"),jQuery(".carousel-img",elt).attr("src")];
+      },x1);
+      array1=Arrays.zip(srcs,jQuery(".carousel-link").toArray());
+      Arrays.iter(Runtime.Tupled(function(tupledArg)
       {
        var _arg1,elt,src;
        _arg1=tupledArg[0];
        elt=tupledArg[1];
        src=_arg1[1];
        elt.setAttribute("href",_arg1[0]);
-       return jQuery(".sponsor",elt).attr("src",src);
+       return jQuery(".carousel-img",elt).attr("src",src);
       }),array1);
+      jQuery.getJSON("testimonials.json",Runtime.Tupled(function(tupledArg)
+      {
+       var json,_arg2,arr,x2,x3,jq1,jq2;
+       json=tupledArg[0];
+       _arg2=tupledArg[1];
+       arr=Shuffle.shuffle(json);
+       x2=OperatorIntrinsics.GetArraySlice(arr,{
+        $:0
+       },{
+        $:1,
+        $0:5
+       });
+       x3=Arrays.map(function(x4)
+       {
+        var arg10,arg101;
+        arg101=List.ofArray([Default.A(List.ofArray([Default.HRef(x4.Permalink),Default.Text(x4.Author)]))]);
+        arg10=List.ofArray([Default.P(List.ofArray([Default.A(List.ofArray([Default.HRef(x4.Permalink),Default.Attr().Class("testimonial"),Default.Text(x4.Text)]))])),HTML5.Tags().NewTag("footer",List.ofArray([Default.Tags().NewTag("cite",arg101)]))]);
+        return Default.Tags().NewTag("blockquote",arg10);
+       },x2);
+       jq1=jQuery("#testimonials-col-1").empty();
+       Arrays.iter(function(elt)
+       {
+        jq1.append(elt.Body);
+       },OperatorIntrinsics.GetArraySlice(x3,{
+        $:0
+       },{
+        $:1,
+        $0:2
+       }));
+       jq2=jQuery("#testimonials-col-2").empty();
+       return Arrays.iter(function(elt)
+       {
+        jq2.append(elt.Body);
+       },OperatorIntrinsics.GetArraySlice(x3,{
+        $:1,
+        $0:3
+       },{
+        $:0
+       }));
+      }));
+      return;
      },x);
      return x;
     },
